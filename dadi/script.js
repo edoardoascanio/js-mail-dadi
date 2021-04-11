@@ -13,6 +13,10 @@ if(numeroUtente > 6){
     alert(" E' necessario scrivere un numero da 1 a 6")
 }
 
+if(numeroUtente < 1){
+    alert(" E' necessario scrivere un numero da 1 a 6")
+}
+
 if(numeroUtente > numeroComputer){
     console.log ("Giocatore umano vince")
     document.getElementById("messaggio").innerHTML = "Giocatore umano vince"
