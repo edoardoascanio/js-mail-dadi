@@ -4,7 +4,9 @@ console.log(numeroUtente);
 var numeroComputer = Math.round(Math.random()*6); 
 console.log(numeroComputer)
 
-
+if(Number.isNaN (numeroUtente)){
+    alert("Inserire cifre numeriche") 
+}
 
 if(numeroUtente > 6){
     alert(" E' necessario scrivere un numero da 1 a 6")
@@ -27,10 +29,6 @@ else if (numeroComputer > numeroUtente){
 else{
     console.log ("Risultato Pari")
     document.getElementById("messaggio").innerHTML = "Risultato Pari"
-}
-
-if(Number.isNaN (numeroUtente)){
-    alert("Inserire cifre numeriche") 
 }
 
 document.getElementById("numero-utente").innerHTML = "Numero Utente = " + 
